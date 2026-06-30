@@ -34,6 +34,26 @@ Master Tasks is a highly responsive web application built to manage daily object
 * **Data Fetching: Axios** *Asynchronous HTTP requests linking backend endpoints to frontend views without refreshing.*
 
 ---
+---
+
+<div align="center">
+
+### 👨‍💻 Developed By
+## MOUAD KERROUMI
+**Full Stack Developer**
+
+---
+
+### 🌟 Milestone Note
+> 💡 **Explication:** This is officially **my very first full-stack project**! I built this to master the integration between React and Laravel APIs using Axios, and to lay down a solid foundation for my journey in web development. 🚀
+
+---
+
+#### 🔒 Copyright
+© **2026 Master Tasks**. All Rights Reserved.  
+Designed & Built with ❤️ by **MOUAD KERROUMI**
+
+</div>
 
 ### 💻 Quick Installation
 

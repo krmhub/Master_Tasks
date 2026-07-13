@@ -60,7 +60,6 @@ class TasksController extends Controller
                 'message' => 'Unauthorized.',
             ], 403);
         }
-
         return response()->json([
             'success' => true,
             'data' => $task,
@@ -83,12 +82,17 @@ class TasksController extends Controller
         }
 
         if ($request->filled('is_completed')) {
-            $query->where('is_completed', $request->is_completed);
+            // Convert string to boolean
+            $isCompleted = filter_var($request->is_completed, FILTER_VALIDATE_BOOLEAN);
+            $query->where('is_completed', $isCompleted);
         }
+
+        $tasks = $query->latest()->get();
 
         return response()->json([
             'success' => true,
-            'data' => $query->latest()->get(),
+            'message' => 'Tasks found successfully.',
+            'data' => $tasks,
         ]);
     }
 
